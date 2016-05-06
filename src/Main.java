@@ -29,6 +29,21 @@ public class Main {
 			}
 		}		
 	}
+	
+	private static void sortBiggestNumbers(int number) {
+		if (number > first) {
+			third = second;
+			second = first;
+			first = number;
+		}
+		else if (number > second) {
+			third = second;
+			second = number;
+		}
+		else if (number > third) {
+			third = number;
+		}
+	}
 
 	private static void displayEnd() {
 		System.out.println("Fin du jeu");		
@@ -56,6 +71,10 @@ public class Main {
 		}
 		catch (Exception e) {
 			in = -2;
+		}
+		
+		if (in < 0) {
+			in = -1;
 		}
 		
 		return in;
