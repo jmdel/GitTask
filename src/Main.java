@@ -36,8 +36,15 @@ public class Main {
 
 	private static void displayBiggestNumbers() {
 		//Display the 3 biggest numbers
-		System.out.println(first);
-		
+		if (first!=INITIAL_VALUE){
+			System.out.println("Fisrt : "+first);
+		}
+		if (second!=INITIAL_VALUE){
+			System.out.println("Second : "+second);
+		}
+		if (third!=INITIAL_VALUE){
+			System.out.println("Third : "+third);
+		}
 		//System.out.println("Affichage du résultat");		
 	}
 
