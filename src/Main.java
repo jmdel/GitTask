@@ -25,6 +25,7 @@ public class Main {
 				displayEnd();
 			}
 			else {
+				sortBiggestNumbers(number);
 				displayBiggestNumbers();
 			}
 		}		
@@ -64,7 +65,7 @@ public class Main {
 	}
 
 	public static int getInputNumber() {
-		int in = -1;
+		int in = -2;
 		// Convert the keyboard input to int
 		try {
 			in = Integer.valueOf(scan.nextLine());
@@ -73,8 +74,8 @@ public class Main {
 			in = -2;
 		}
 		
-		if (in < 0) {
-			in = -1;
+		if (in < -2) {
+			in = -2;
 		}
 		
 		return in;
