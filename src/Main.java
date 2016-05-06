@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
 
 	private static Scanner scan;
-	
-	private static int firt;
-	private static int second;
-	private static int third;	
+	private static final int INITIAL_VALUE=-99;
+	private static int first=INITIAL_VALUE;
+	private static int second=INITIAL_VALUE;
+	private static int third=INITIAL_VALUE;	
 
 	public static void main(String[] args) {
 		// Create keyboard scanner
@@ -35,7 +35,10 @@ public class Main {
 	}
 
 	private static void displayBiggestNumbers() {
-		System.out.println("Affichage du résultat");		
+		//Display the 3 biggest numbers
+		System.out.println(first);
+		
+		//System.out.println("Affichage du résultat");		
 	}
 
 	public static int getInputNumber() {
